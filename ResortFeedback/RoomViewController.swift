@@ -11,7 +11,7 @@ class RoomViewController: UIViewController {
 
     // used for storing the ratings for this specific user, to calculate their average score
     var ratingArr : [Double] = []
-    //var points : Int = 0
+    
     // outlets used to reference each rating bar the user can interact with
     @IBOutlet weak var ratingOne: CosmosView!
     @IBOutlet weak var ratingTwo: CosmosView!
@@ -83,18 +83,22 @@ class RoomViewController: UIViewController {
     
     @IBAction func calcAvg(_ sender: Any) {
         let sumArray = ratingArr.reduce(0, +) // reduces the array, one entry at a time and adds the values along the way
+        
         let avg = sumArray / Double(ratingArr.count) // take the average to find the average score the user gave for this survey
+        
         print("Average score from this user is:", avg)
-        //points += ratingArr.count // used for determining if the user can 'purchase' offers from the offers screen
         
         if (avg >= 2.5) { // If the user's average score is 2.5 or greater, present them with a thank you screen before allowing them to return to the login menu
             let thankYou = sb.instantiateViewController(identifier: "thanks") as! ThankYouScreenViewController
+            
             present(thankYou, animated: true, completion: nil)
         } else if (avg < 2.5) { // If the user's average is below a 2.5, present them with a screen apologizing for the service before allowing them to return to the login menu
             let badReview = sb.instantiateViewController(identifier: "badreview") as! PoorReviewViewController
+            
             present(badReview, animated: true, completion: nil)
         } else if (avg.isNaN) { // user did not enter anything into the survey, try again
             let redo = sb.instantiateViewController(identifier: "redo") as! RedoSurveyViewController
+            
             present(redo, animated: true, completion: nil)
         }
     }

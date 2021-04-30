@@ -17,8 +17,6 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var passWord: UITextField!
     
-    var points : Int = 0 // Used for a shared points gained via answering the surveys. The user will be able to spend points to claim offers.
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
