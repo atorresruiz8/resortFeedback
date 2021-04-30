@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B255C68262F484D00C88136 /* LogInMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B255C67262F484D00C88136 /* LogInMenuViewController.swift */; };
+		8B3B8BAB263712B4000C779E /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BAA263712B4000C779E /* RoomViewController.swift */; };
+		8B3B8BAD263722EF000C779E /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BAC263722EF000C779E /* AdminViewController.swift */; };
+		8B3B8BAF26372D09000C779E /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BAE26372D09000C779E /* GymViewController.swift */; };
+		8B3B8BB126372D14000C779E /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BB026372D14000C779E /* FoodViewController.swift */; };
+		8B3B8BB326372D1C000C779E /* SpaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BB226372D1C000C779E /* SpaViewController.swift */; };
+		8B3B8BB526372D25000C779E /* OverallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BB426372D25000C779E /* OverallViewController.swift */; };
+		8B3B8BBE26372FD5000C779E /* Guest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BBA26372FD5000C779E /* Guest+CoreDataClass.swift */; };
+		8B3B8BBF26372FD5000C779E /* Guest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BBB26372FD5000C779E /* Guest+CoreDataProperties.swift */; };
+		8B3B8BE026376320000C779E /* Overall+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BD626376320000C779E /* Overall+CoreDataClass.swift */; };
+		8B3B8BE126376320000C779E /* Overall+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BD726376320000C779E /* Overall+CoreDataProperties.swift */; };
+		8B3B8BE226376320000C779E /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BD826376320000C779E /* Food+CoreDataClass.swift */; };
+		8B3B8BE326376320000C779E /* Food+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BD926376320000C779E /* Food+CoreDataProperties.swift */; };
+		8B3B8BE426376320000C779E /* Gym+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDA26376320000C779E /* Gym+CoreDataClass.swift */; };
+		8B3B8BE526376320000C779E /* Gym+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDB26376320000C779E /* Gym+CoreDataProperties.swift */; };
+		8B3B8BE626376320000C779E /* Spa+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDC26376320000C779E /* Spa+CoreDataClass.swift */; };
+		8B3B8BE726376320000C779E /* Spa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */; };
+		8B3B8BE826376320000C779E /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */; };
+		8B3B8BE926376320000C779E /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */; };
 		8B7D76BD262E262300CD5F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76BC262E262300CD5F84 /* AppDelegate.swift */; };
 		8B7D76BF262E262300CD5F84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */; };
 		8B7D76C1262E262300CD5F84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76C0262E262300CD5F84 /* ViewController.swift */; };
@@ -14,9 +33,51 @@
 		8B7D76C7262E262300CD5F84 /* ResortFeedback.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76C5262E262300CD5F84 /* ResortFeedback.xcdatamodeld */; };
 		8B7D76C9262E262600CD5F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D76C8262E262600CD5F84 /* Assets.xcassets */; };
 		8B7D76CC262E262600CD5F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D76CA262E262600CD5F84 /* LaunchScreen.storyboard */; };
+		8B7D76D6262E2F1A00CD5F84 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */; };
+		8B7D76D8262E2F3600CD5F84 /* ChangePassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */; };
+		8B7D76DE262E306B00CD5F84 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76DD262E306B00CD5F84 /* DBHelper.swift */; };
+		8B7D76E0262E38F400CD5F84 /* ForgotPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */; };
+		8BBA83B9263C5784004FA850 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA83B8263C5784004FA850 /* OffersViewController.swift */; };
+		8BBC787F263B5B610007542B /* ThankYouScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC787E263B5B610007542B /* ThankYouScreenViewController.swift */; };
+		8BBC7881263B5B8F0007542B /* PoorReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC7880263B5B8F0007542B /* PoorReviewViewController.swift */; };
+		8BBC7883263B63800007542B /* RedoSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC7882263B63800007542B /* RedoSurveyViewController.swift */; };
+		8BFE7AB6263B260100D22213 /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AA6263B260000D22213 /* CosmosDefaultSettings.swift */; };
+		8BFE7AB7263B260100D22213 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AA7263B260000D22213 /* CosmosRating.swift */; };
+		8BFE7AB8263B260100D22213 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AA8263B260000D22213 /* CosmosLayerHelper.swift */; };
+		8BFE7AB9263B260100D22213 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AA9263B260000D22213 /* CosmosSettings.swift */; };
+		8BFE7ABA263B260100D22213 /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AAA263B260100D22213 /* CosmosText.swift */; };
+		8BFE7ABB263B260100D22213 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AAB263B260100D22213 /* CosmosTouchTarget.swift */; };
+		8BFE7ABC263B260100D22213 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AAC263B260100D22213 /* CosmosSize.swift */; };
+		8BFE7ABD263B260100D22213 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AAD263B260100D22213 /* CosmosView.swift */; };
+		8BFE7ABE263B260100D22213 /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AAE263B260100D22213 /* CosmosLocalizedRating.swift */; };
+		8BFE7ABF263B260100D22213 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AAF263B260100D22213 /* CosmosTouch.swift */; };
+		8BFE7AC0263B260100D22213 /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB0263B260100D22213 /* CosmosAccessibility.swift */; };
+		8BFE7AC1263B260100D22213 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB2263B260100D22213 /* CosmosLayers.swift */; };
+		8BFE7AC2263B260100D22213 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB3263B260100D22213 /* StarFillMode.swift */; };
+		8BFE7AC3263B260100D22213 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB4263B260100D22213 /* StarLayer.swift */; };
+		8BFE7AC4263B260100D22213 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB5263B260100D22213 /* RightToLeft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B255C67262F484D00C88136 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
+		8B3B8BAA263712B4000C779E /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		8B3B8BAC263722EF000C779E /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		8B3B8BAE26372D09000C779E /* GymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		8B3B8BB026372D14000C779E /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		8B3B8BB226372D1C000C779E /* SpaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaViewController.swift; sourceTree = "<group>"; };
+		8B3B8BB426372D25000C779E /* OverallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallViewController.swift; sourceTree = "<group>"; };
+		8B3B8BBA26372FD5000C779E /* Guest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Guest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B3B8BBB26372FD5000C779E /* Guest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Guest+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B3B8BD626376320000C779E /* Overall+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Overall+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B3B8BD726376320000C779E /* Overall+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Overall+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B3B8BD826376320000C779E /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B3B8BD926376320000C779E /* Food+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B3B8BDA26376320000C779E /* Gym+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gym+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B3B8BDB26376320000C779E /* Gym+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gym+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B3B8BDC26376320000C779E /* Spa+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spa+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spa+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8B7D76B9262E262300CD5F84 /* ResortFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7D76BC262E262300CD5F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +87,30 @@
 		8B7D76C8262E262600CD5F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B7D76CB262E262600CD5F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B7D76CD262E262600CD5F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassWordViewController.swift; sourceTree = "<group>"; };
+		8B7D76DD262E306B00CD5F84 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassWordViewController.swift; sourceTree = "<group>"; };
+		8BBA83B8263C5784004FA850 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		8BBC787E263B5B610007542B /* ThankYouScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouScreenViewController.swift; sourceTree = "<group>"; };
+		8BBC7880263B5B8F0007542B /* PoorReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoorReviewViewController.swift; sourceTree = "<group>"; };
+		8BBC7882263B63800007542B /* RedoSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedoSurveyViewController.swift; sourceTree = "<group>"; };
+		8BFE7AA6263B260000D22213 /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = "../../../../../Downloads/Rating File/CosmosDefaultSettings.swift"; sourceTree = "<group>"; };
+		8BFE7AA7263B260000D22213 /* CosmosRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = "../../../../../Downloads/Rating File/CosmosRating.swift"; sourceTree = "<group>"; };
+		8BFE7AA8263B260000D22213 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = "../../../../../Downloads/Rating File/CosmosLayerHelper.swift"; sourceTree = "<group>"; };
+		8BFE7AA9263B260000D22213 /* CosmosSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = "../../../../../Downloads/Rating File/CosmosSettings.swift"; sourceTree = "<group>"; };
+		8BFE7AAA263B260100D22213 /* CosmosText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = "../../../../../Downloads/Rating File/CosmosText.swift"; sourceTree = "<group>"; };
+		8BFE7AAB263B260100D22213 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = "../../../../../Downloads/Rating File/CosmosTouchTarget.swift"; sourceTree = "<group>"; };
+		8BFE7AAC263B260100D22213 /* CosmosSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = "../../../../../Downloads/Rating File/CosmosSize.swift"; sourceTree = "<group>"; };
+		8BFE7AAD263B260100D22213 /* CosmosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = "../../../../../Downloads/Rating File/CosmosView.swift"; sourceTree = "<group>"; };
+		8BFE7AAE263B260100D22213 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = "../../../../../Downloads/Rating File/CosmosLocalizedRating.swift"; sourceTree = "<group>"; };
+		8BFE7AAF263B260100D22213 /* CosmosTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = "../../../../../Downloads/Rating File/CosmosTouch.swift"; sourceTree = "<group>"; };
+		8BFE7AB0263B260100D22213 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = "../../../../../Downloads/Rating File/CosmosAccessibility.swift"; sourceTree = "<group>"; };
+		8BFE7AB1263B260100D22213 /* Cosmos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cosmos.h; path = "../../../../../Downloads/Rating File/Cosmos.h"; sourceTree = "<group>"; };
+		8BFE7AB2263B260100D22213 /* CosmosLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = "../../../../../Downloads/Rating File/CosmosLayers.swift"; sourceTree = "<group>"; };
+		8BFE7AB3263B260100D22213 /* StarFillMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = "../../../../../Downloads/Rating File/StarFillMode.swift"; sourceTree = "<group>"; };
+		8BFE7AB4263B260100D22213 /* StarLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = "../../../../../Downloads/Rating File/StarLayer.swift"; sourceTree = "<group>"; };
+		8BFE7AB5263B260100D22213 /* RightToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = "../../../../../Downloads/Rating File/RightToLeft.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +127,18 @@
 		8B7D76B0262E262300CD5F84 = {
 			isa = PBXGroup;
 			children = (
+				8B3B8BD626376320000C779E /* Overall+CoreDataClass.swift */,
+				8B3B8BD726376320000C779E /* Overall+CoreDataProperties.swift */,
+				8B3B8BD826376320000C779E /* Food+CoreDataClass.swift */,
+				8B3B8BD926376320000C779E /* Food+CoreDataProperties.swift */,
+				8B3B8BDA26376320000C779E /* Gym+CoreDataClass.swift */,
+				8B3B8BDB26376320000C779E /* Gym+CoreDataProperties.swift */,
+				8B3B8BDC26376320000C779E /* Spa+CoreDataClass.swift */,
+				8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */,
+				8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */,
+				8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */,
+				8B3B8BBA26372FD5000C779E /* Guest+CoreDataClass.swift */,
+				8B3B8BBB26372FD5000C779E /* Guest+CoreDataProperties.swift */,
 				8B7D76BB262E262300CD5F84 /* ResortFeedback */,
 				8B7D76BA262E262300CD5F84 /* Products */,
 			);
@@ -58,6 +155,7 @@
 		8B7D76BB262E262300CD5F84 /* ResortFeedback */ = {
 			isa = PBXGroup;
 			children = (
+				8BFE7AA5263B25EF00D22213 /* Cosmos */,
 				8B7D76BC262E262300CD5F84 /* AppDelegate.swift */,
 				8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */,
 				8B7D76C0262E262300CD5F84 /* ViewController.swift */,
@@ -66,8 +164,46 @@
 				8B7D76CA262E262600CD5F84 /* LaunchScreen.storyboard */,
 				8B7D76CD262E262600CD5F84 /* Info.plist */,
 				8B7D76C5262E262300CD5F84 /* ResortFeedback.xcdatamodeld */,
+				8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */,
+				8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */,
+				8B7D76DD262E306B00CD5F84 /* DBHelper.swift */,
+				8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */,
+				8B255C67262F484D00C88136 /* LogInMenuViewController.swift */,
+				8B3B8BAC263722EF000C779E /* AdminViewController.swift */,
+				8B3B8BAA263712B4000C779E /* RoomViewController.swift */,
+				8B3B8BAE26372D09000C779E /* GymViewController.swift */,
+				8B3B8BB026372D14000C779E /* FoodViewController.swift */,
+				8B3B8BB226372D1C000C779E /* SpaViewController.swift */,
+				8B3B8BB426372D25000C779E /* OverallViewController.swift */,
+				8BBC787E263B5B610007542B /* ThankYouScreenViewController.swift */,
+				8BBC7880263B5B8F0007542B /* PoorReviewViewController.swift */,
+				8BBC7882263B63800007542B /* RedoSurveyViewController.swift */,
+				8BBA83B8263C5784004FA850 /* OffersViewController.swift */,
 			);
 			path = ResortFeedback;
+			sourceTree = "<group>";
+		};
+		8BFE7AA5263B25EF00D22213 /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				8BFE7AB1263B260100D22213 /* Cosmos.h */,
+				8BFE7AB0263B260100D22213 /* CosmosAccessibility.swift */,
+				8BFE7AA6263B260000D22213 /* CosmosDefaultSettings.swift */,
+				8BFE7AA8263B260000D22213 /* CosmosLayerHelper.swift */,
+				8BFE7AB2263B260100D22213 /* CosmosLayers.swift */,
+				8BFE7AAE263B260100D22213 /* CosmosLocalizedRating.swift */,
+				8BFE7AA7263B260000D22213 /* CosmosRating.swift */,
+				8BFE7AA9263B260000D22213 /* CosmosSettings.swift */,
+				8BFE7AAC263B260100D22213 /* CosmosSize.swift */,
+				8BFE7AAA263B260100D22213 /* CosmosText.swift */,
+				8BFE7AAF263B260100D22213 /* CosmosTouch.swift */,
+				8BFE7AAB263B260100D22213 /* CosmosTouchTarget.swift */,
+				8BFE7AAD263B260100D22213 /* CosmosView.swift */,
+				8BFE7AB5263B260100D22213 /* RightToLeft.swift */,
+				8BFE7AB3263B260100D22213 /* StarFillMode.swift */,
+				8BFE7AB4263B260100D22213 /* StarLayer.swift */,
+			);
+			path = Cosmos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +276,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFE7AC3263B260100D22213 /* StarLayer.swift in Sources */,
+				8B3B8BE126376320000C779E /* Overall+CoreDataProperties.swift in Sources */,
+				8B255C68262F484D00C88136 /* LogInMenuViewController.swift in Sources */,
+				8B7D76E0262E38F400CD5F84 /* ForgotPassWordViewController.swift in Sources */,
+				8BFE7AC2263B260100D22213 /* StarFillMode.swift in Sources */,
+				8BFE7ABD263B260100D22213 /* CosmosView.swift in Sources */,
+				8B3B8BAF26372D09000C779E /* GymViewController.swift in Sources */,
+				8BFE7ABA263B260100D22213 /* CosmosText.swift in Sources */,
+				8B3B8BE026376320000C779E /* Overall+CoreDataClass.swift in Sources */,
+				8BBC787F263B5B610007542B /* ThankYouScreenViewController.swift in Sources */,
+				8B3B8BE826376320000C779E /* Room+CoreDataClass.swift in Sources */,
+				8BFE7AC0263B260100D22213 /* CosmosAccessibility.swift in Sources */,
+				8B3B8BB126372D14000C779E /* FoodViewController.swift in Sources */,
+				8BBC7883263B63800007542B /* RedoSurveyViewController.swift in Sources */,
+				8B3B8BE226376320000C779E /* Food+CoreDataClass.swift in Sources */,
+				8BBA83B9263C5784004FA850 /* OffersViewController.swift in Sources */,
+				8B3B8BAB263712B4000C779E /* RoomViewController.swift in Sources */,
+				8B3B8BB526372D25000C779E /* OverallViewController.swift in Sources */,
+				8B7D76D6262E2F1A00CD5F84 /* SignUpViewController.swift in Sources */,
+				8B3B8BBE26372FD5000C779E /* Guest+CoreDataClass.swift in Sources */,
+				8B3B8BE626376320000C779E /* Spa+CoreDataClass.swift in Sources */,
+				8BFE7AB8263B260100D22213 /* CosmosLayerHelper.swift in Sources */,
+				8BFE7AB9263B260100D22213 /* CosmosSettings.swift in Sources */,
+				8BFE7ABC263B260100D22213 /* CosmosSize.swift in Sources */,
+				8B3B8BE326376320000C779E /* Food+CoreDataProperties.swift in Sources */,
 				8B7D76C1262E262300CD5F84 /* ViewController.swift in Sources */,
+				8B7D76D8262E2F3600CD5F84 /* ChangePassWordViewController.swift in Sources */,
 				8B7D76BD262E262300CD5F84 /* AppDelegate.swift in Sources */,
+				8BBC7881263B5B8F0007542B /* PoorReviewViewController.swift in Sources */,
+				8B3B8BE526376320000C779E /* Gym+CoreDataProperties.swift in Sources */,
+				8B3B8BB326372D1C000C779E /* SpaViewController.swift in Sources */,
+				8B7D76DE262E306B00CD5F84 /* DBHelper.swift in Sources */,
+				8BFE7ABB263B260100D22213 /* CosmosTouchTarget.swift in Sources */,
+				8BFE7AC1263B260100D22213 /* CosmosLayers.swift in Sources */,
+				8B3B8BE726376320000C779E /* Spa+CoreDataProperties.swift in Sources */,
+				8B3B8BE426376320000C779E /* Gym+CoreDataClass.swift in Sources */,
+				8BFE7AC4263B260100D22213 /* RightToLeft.swift in Sources */,
+				8B3B8BBF26372FD5000C779E /* Guest+CoreDataProperties.swift in Sources */,
+				8B3B8BAD263722EF000C779E /* AdminViewController.swift in Sources */,
+				8BFE7ABF263B260100D22213 /* CosmosTouch.swift in Sources */,
+				8BFE7AB7263B260100D22213 /* CosmosRating.swift in Sources */,
+				8BFE7AB6263B260100D22213 /* CosmosDefaultSettings.swift in Sources */,
 				8B7D76BF262E262300CD5F84 /* SceneDelegate.swift in Sources */,
+				8B3B8BE926376320000C779E /* Room+CoreDataProperties.swift in Sources */,
+				8BFE7ABE263B260100D22213 /* CosmosLocalizedRating.swift in Sources */,
 				8B7D76C7262E262300CD5F84 /* ResortFeedback.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +469,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGM7XHXXW2;
 				INFOPLIST_FILE = ResortFeedback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +489,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGM7XHXXW2;
 				INFOPLIST_FILE = ResortFeedback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
