@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,17 +26,19 @@
 		8B3B8BE726376320000C779E /* Spa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */; };
 		8B3B8BE826376320000C779E /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */; };
 		8B3B8BE926376320000C779E /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */; };
+		8B659FF22641C4CE00574981 /* pepeD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B659FF12641C4CE00574981 /* pepeD.gif */; };
+		8B6608FA264192D100A494A0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6608F9264192D100A494A0 /* WelcomeViewController.swift */; };
 		8B7D76BD262E262300CD5F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76BC262E262300CD5F84 /* AppDelegate.swift */; };
 		8B7D76BF262E262300CD5F84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */; };
 		8B7D76C1262E262300CD5F84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76C0262E262300CD5F84 /* ViewController.swift */; };
 		8B7D76C4262E262300CD5F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D76C2262E262300CD5F84 /* Main.storyboard */; };
 		8B7D76C7262E262300CD5F84 /* ResortFeedback.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76C5262E262300CD5F84 /* ResortFeedback.xcdatamodeld */; };
-		8B7D76C9262E262600CD5F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D76C8262E262600CD5F84 /* Assets.xcassets */; };
 		8B7D76CC262E262600CD5F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D76CA262E262600CD5F84 /* LaunchScreen.storyboard */; };
 		8B7D76D6262E2F1A00CD5F84 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */; };
 		8B7D76D8262E2F3600CD5F84 /* ChangePassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */; };
 		8B7D76DE262E306B00CD5F84 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76DD262E306B00CD5F84 /* DBHelper.swift */; };
 		8B7D76E0262E38F400CD5F84 /* ForgotPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */; };
+		8B924C4D2641D09E00FC5B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B924C4C2641D09D00FC5B82 /* Assets.xcassets */; };
 		8BBA83B9263C5784004FA850 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA83B8263C5784004FA850 /* OffersViewController.swift */; };
 		8BBC787F263B5B610007542B /* ThankYouScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC787E263B5B610007542B /* ThankYouScreenViewController.swift */; };
 		8BBC7881263B5B8F0007542B /* PoorReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC7880263B5B8F0007542B /* PoorReviewViewController.swift */; };
@@ -56,9 +58,11 @@
 		8BFE7AC2263B260100D22213 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB3263B260100D22213 /* StarFillMode.swift */; };
 		8BFE7AC3263B260100D22213 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB4263B260100D22213 /* StarLayer.swift */; };
 		8BFE7AC4263B260100D22213 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE7AB5263B260100D22213 /* RightToLeft.swift */; };
+		E23AD0148F45B5FA845E7019 /* Pods_ResortFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAFF4EAADB035519347C937 /* Pods_ResortFeedback.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16964D6062C233259C553357 /* Pods-ResortFeedback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedback.release.xcconfig"; path = "Target Support Files/Pods-ResortFeedback/Pods-ResortFeedback.release.xcconfig"; sourceTree = "<group>"; };
 		8B255C67262F484D00C88136 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
 		8B3B8BAA263712B4000C779E /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		8B3B8BAC263722EF000C779E /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
@@ -78,19 +82,21 @@
 		8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spa+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B659FF12641C4CE00574981 /* pepeD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pepeD.gif; path = ../../../../Downloads/pepeD.gif; sourceTree = "<group>"; };
+		8B6608F9264192D100A494A0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8B7D76B9262E262300CD5F84 /* ResortFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7D76BC262E262300CD5F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B7D76C0262E262300CD5F84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B7D76C3262E262300CD5F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B7D76C6262E262300CD5F84 /* ResortFeedback.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResortFeedback.xcdatamodel; sourceTree = "<group>"; };
-		8B7D76C8262E262600CD5F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B7D76CB262E262600CD5F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B7D76CD262E262600CD5F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassWordViewController.swift; sourceTree = "<group>"; };
 		8B7D76DD262E306B00CD5F84 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassWordViewController.swift; sourceTree = "<group>"; };
+		8B924C4C2641D09D00FC5B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		8BBA83B8263C5784004FA850 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		8BBC787E263B5B610007542B /* ThankYouScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouScreenViewController.swift; sourceTree = "<group>"; };
 		8BBC7880263B5B8F0007542B /* PoorReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoorReviewViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		8BFE7AB3263B260100D22213 /* StarFillMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = "../../../../../Downloads/Rating File/StarFillMode.swift"; sourceTree = "<group>"; };
 		8BFE7AB4263B260100D22213 /* StarLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = "../../../../../Downloads/Rating File/StarLayer.swift"; sourceTree = "<group>"; };
 		8BFE7AB5263B260100D22213 /* RightToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = "../../../../../Downloads/Rating File/RightToLeft.swift"; sourceTree = "<group>"; };
+		D716821413734E9389BADFC0 /* Pods-ResortFeedback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortFeedback.debug.xcconfig"; path = "Target Support Files/Pods-ResortFeedback/Pods-ResortFeedback.debug.xcconfig"; sourceTree = "<group>"; };
+		ECAFF4EAADB035519347C937 /* Pods_ResortFeedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResortFeedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +126,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23AD0148F45B5FA845E7019 /* Pods_ResortFeedback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		313AE731E0CE41428AFB2EA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECAFF4EAADB035519347C937 /* Pods_ResortFeedback.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B7D76B0262E262300CD5F84 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +158,8 @@
 				8B3B8BBB26372FD5000C779E /* Guest+CoreDataProperties.swift */,
 				8B7D76BB262E262300CD5F84 /* ResortFeedback */,
 				8B7D76BA262E262300CD5F84 /* Products */,
+				B2765A9A71954248F2F37C6D /* Pods */,
+				313AE731E0CE41428AFB2EA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,32 +174,58 @@
 		8B7D76BB262E262300CD5F84 /* ResortFeedback */ = {
 			isa = PBXGroup;
 			children = (
+				8B659FF12641C4CE00574981 /* pepeD.gif */,
+				8BB294D52641A6A8000BCD02 /* End Screens */,
+				8BB294D42641A695000BCD02 /* Logging In */,
+				8BB294D32641A64C000BCD02 /* Survey */,
 				8BFE7AA5263B25EF00D22213 /* Cosmos */,
 				8B7D76BC262E262300CD5F84 /* AppDelegate.swift */,
 				8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */,
 				8B7D76C0262E262300CD5F84 /* ViewController.swift */,
 				8B7D76C2262E262300CD5F84 /* Main.storyboard */,
-				8B7D76C8262E262600CD5F84 /* Assets.xcassets */,
+				8B924C4C2641D09D00FC5B82 /* Assets.xcassets */,
 				8B7D76CA262E262600CD5F84 /* LaunchScreen.storyboard */,
 				8B7D76CD262E262600CD5F84 /* Info.plist */,
 				8B7D76C5262E262300CD5F84 /* ResortFeedback.xcdatamodeld */,
-				8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */,
-				8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */,
 				8B7D76DD262E306B00CD5F84 /* DBHelper.swift */,
-				8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */,
-				8B255C67262F484D00C88136 /* LogInMenuViewController.swift */,
-				8B3B8BAC263722EF000C779E /* AdminViewController.swift */,
+				8B6608F9264192D100A494A0 /* WelcomeViewController.swift */,
+			);
+			path = ResortFeedback;
+			sourceTree = "<group>";
+		};
+		8BB294D32641A64C000BCD02 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
 				8B3B8BAA263712B4000C779E /* RoomViewController.swift */,
 				8B3B8BAE26372D09000C779E /* GymViewController.swift */,
 				8B3B8BB026372D14000C779E /* FoodViewController.swift */,
 				8B3B8BB226372D1C000C779E /* SpaViewController.swift */,
 				8B3B8BB426372D25000C779E /* OverallViewController.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		8BB294D42641A695000BCD02 /* Logging In */ = {
+			isa = PBXGroup;
+			children = (
+				8B3B8BAC263722EF000C779E /* AdminViewController.swift */,
+				8B7D76D5262E2F1A00CD5F84 /* SignUpViewController.swift */,
+				8B7D76D7262E2F3600CD5F84 /* ChangePassWordViewController.swift */,
+				8B7D76DF262E38F400CD5F84 /* ForgotPassWordViewController.swift */,
+				8B255C67262F484D00C88136 /* LogInMenuViewController.swift */,
+				8BBA83B8263C5784004FA850 /* OffersViewController.swift */,
+			);
+			path = "Logging In";
+			sourceTree = "<group>";
+		};
+		8BB294D52641A6A8000BCD02 /* End Screens */ = {
+			isa = PBXGroup;
+			children = (
 				8BBC787E263B5B610007542B /* ThankYouScreenViewController.swift */,
 				8BBC7880263B5B8F0007542B /* PoorReviewViewController.swift */,
 				8BBC7882263B63800007542B /* RedoSurveyViewController.swift */,
-				8BBA83B8263C5784004FA850 /* OffersViewController.swift */,
 			);
-			path = ResortFeedback;
+			path = "End Screens";
 			sourceTree = "<group>";
 		};
 		8BFE7AA5263B25EF00D22213 /* Cosmos */ = {
@@ -206,6 +251,15 @@
 			path = Cosmos;
 			sourceTree = "<group>";
 		};
+		B2765A9A71954248F2F37C6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D716821413734E9389BADFC0 /* Pods-ResortFeedback.debug.xcconfig */,
+				16964D6062C233259C553357 /* Pods-ResortFeedback.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B7D76D0262E262600CD5F84 /* Build configuration list for PBXNativeTarget "ResortFeedback" */;
 			buildPhases = (
+				BB3127A52B4B60B37979A23C /* [CP] Check Pods Manifest.lock */,
 				8B7D76B5262E262300CD5F84 /* Sources */,
 				8B7D76B6262E262300CD5F84 /* Frameworks */,
 				8B7D76B7262E262300CD5F84 /* Resources */,
+				FDE2C7F452317D7963B9A5B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,12 +320,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7D76CC262E262600CD5F84 /* LaunchScreen.storyboard in Resources */,
-				8B7D76C9262E262600CD5F84 /* Assets.xcassets in Resources */,
 				8B7D76C4262E262300CD5F84 /* Main.storyboard in Resources */,
+				8B924C4D2641D09E00FC5B82 /* Assets.xcassets in Resources */,
+				8B659FF22641C4CE00574981 /* pepeD.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB3127A52B4B60B37979A23C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ResortFeedback-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE2C7F452317D7963B9A5B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResortFeedback/Pods-ResortFeedback-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResortFeedback/Pods-ResortFeedback-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ResortFeedback/Pods-ResortFeedback-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B7D76B5262E262300CD5F84 /* Sources */ = {
@@ -304,6 +403,7 @@
 				8B7D76C1262E262300CD5F84 /* ViewController.swift in Sources */,
 				8B7D76D8262E2F3600CD5F84 /* ChangePassWordViewController.swift in Sources */,
 				8B7D76BD262E262300CD5F84 /* AppDelegate.swift in Sources */,
+				8B6608FA264192D100A494A0 /* WelcomeViewController.swift in Sources */,
 				8BBC7881263B5B8F0007542B /* PoorReviewViewController.swift in Sources */,
 				8B3B8BE526376320000C779E /* Gym+CoreDataProperties.swift in Sources */,
 				8B3B8BB326372D1C000C779E /* SpaViewController.swift in Sources */,
@@ -465,6 +565,7 @@
 		};
 		8B7D76D1262E262600CD5F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D716821413734E9389BADFC0 /* Pods-ResortFeedback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,6 +586,7 @@
 		};
 		8B7D76D2262E262600CD5F84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16964D6062C233259C553357 /* Pods-ResortFeedback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

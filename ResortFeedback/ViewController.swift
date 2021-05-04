@@ -10,51 +10,81 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelegate is used to declare the function for pushing a key to exit keyboard input
     let ud = UserDefaults.standard // Used to store the user's default login information
     let uds = UserDefaults.standard // Used to store the user's default switch state
-    let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil) // Used to instantiate and push different screens to the viewer's display
     
     // Outlets used to check the input/state of the "remember me" switch and the username/password text fields
     @IBOutlet weak var sw: UISwitch!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var passWord: UITextField!
     
+    // Outlets used for referencing to create rounded buttons
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var createAcc: UIButton!
+    @IBOutlet weak var forgotPass: UIButton!
+    @IBOutlet weak var changePass: UIButton!
+    
+    
+    @IBOutlet weak var invalidLogin: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if (sw.isOn) { // if the switch is on, remember the last username/password combo entered and automatically enter it for the user
-            userName.text = ud.string(forKey: "username")
-            passWord.text = ud.string(forKey: "password")
-        }
         
         // these delegates are used in conjunction with textFieldShouldReturn to allow the user to exit touch screen keyboard input by pushing the return key
         userName.delegate = self
         passWord.delegate = self
+        
+        // these following lines are used to create a rounded button effect, with a border width of 4 pixels, corner radius of 10 pixels, continuous corner curve and a default border color of black
+        loginButton.layer.borderWidth = 4
+        loginButton.layer.cornerRadius = 10.0
+        loginButton.layer.cornerCurve = .continuous
+        
+        createAcc.layer.borderWidth = 4
+        createAcc.layer.cornerRadius = 10.0
+        createAcc.layer.cornerCurve = .continuous
+        
+        forgotPass.layer.borderWidth = 4
+        forgotPass.layer.cornerRadius = 10.0
+        forgotPass.layer.cornerCurve = .continuous
+        
+        changePass.layer.borderWidth = 4
+        changePass.layer.cornerRadius = 10.0
+        changePass.layer.cornerCurve = .continuous
+        
+        invalidLogin.isHidden = true
+        
+        if (sw.isOn) { // if the switch is on, remember the last username/password combo entered and automatically enter it for the user
+            userName.text = ud.string(forKey: "username")
+            passWord.text = ud.string(forKey: "password")
+        }
     }
 
     @IBAction func signIn(_ sender: Any) { // this function verifies if the entered username and password match values stored in the coredata
         if (userName.text == "admin" && passWord.text == "admin") { // for my testing purposes, this login presents me an admin page where I can easily view what is in the CoreData for each entity and delete them if needed
-            let adminPage = sb.instantiateViewController(identifier: "admin") as! AdminViewController
-            present(adminPage, animated: true, completion: nil)
+            let adminPage = self.storyboard?.instantiateViewController(withIdentifier: "admin") as! AdminViewController
+            self.present(adminPage, animated: true, completion: nil)
         }
         
         let data = DBHelper.inst.getData()
         for g in data {
             if (userName.text == g.username! && passWord.text == g.password!) { // username and password are in core data, let the user sign in
-                let signIn = sb.instantiateViewController(identifier: "login") as!LogInMenuViewController
-                present(signIn, animated: true, completion: nil)
+                let signIn = self.storyboard?.instantiateViewController(withIdentifier: "login") as! LogInMenuViewController
+                self.present(signIn, animated: true, completion: nil)
+            } else { // we have an invalid login, don't hide the label anymore
+                invalidLogin.isHidden = false
             }
         }
     }
     
     
-    @IBAction func signUp(_ sender: Any) { // this creates a new key-value pair that stores the user's login info by taking them to a new screen
-        let signUp = sb.instantiateViewController(withIdentifier: "signup") as!SignUpViewController
-        present(signUp, animated: true, completion: nil)
+    @IBAction func signUp(_ sender: UIButton) { // this creates a new key-value pair that stores the user's login info by taking them to a new screen
+        let signUp = self.storyboard?.instantiateViewController(withIdentifier: "signup") as! SignUpViewController
+        self.present(signUp, animated: true, completion: nil)
     }
     
     
     @IBAction func updatePassWord(_ sender: Any) { // this allows the user to change/update their password by taking them to a new screen
-        let change = sb.instantiateViewController(withIdentifier: "change") as!ChangePassWordViewController
-        present(change, animated: true, completion: nil)
+        let change = self.storyboard?.instantiateViewController(withIdentifier: "change") as! ChangePassWordViewController
+        self.present(change, animated: true, completion: nil)
     }
     
     
@@ -76,20 +106,13 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
     }
     
     @IBAction func forgotPassWord(_ sender: Any) { // this allows the user to reset their password if they forgot it. first checks to see if the username is in the coredata. brings up a new screen
-        let forgot = sb.instantiateViewController(withIdentifier: "forgot") as!ForgotPassWordViewController
-        present(forgot, animated: true, completion: nil)
+        let forgot = self.storyboard?.instantiateViewController(withIdentifier: "forgot") as! ForgotPassWordViewController
+        self.present(forgot, animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool { // used to make it so the user can push the return key on the keyboard to exit out of keyboard input
         textField.resignFirstResponder()
         return true
     }
-//
-//    func getPoints() -> Int{
-//        return points
-//    }
-//
-//    func setPoints(points: Int) {
-//        self.points = points
-//    }
+
 }
