@@ -212,6 +212,7 @@ class DBHelper {
     }
     
     func wipeRoomReview() { // wipes the core data clean
+        // call this function using a line like: DBHelper.inst.wipeRoomReview()
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Room")
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
 

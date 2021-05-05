@@ -26,6 +26,7 @@ class WelcomeViewController: UIViewController {
     
     @objc func loadSignInVC() { // instantiates the view controller containing the sign in screen
         let myVC = self.storyboard?.instantiateViewController(withIdentifier: "VC") as! ViewController
+        myVC.modalPresentationStyle = .fullScreen
         self.present(myVC, animated: true, completion: nil)
     }
     

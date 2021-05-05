@@ -13,13 +13,15 @@ import SwiftGifOrigin
 class ThankYouScreenViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var fireWorks: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         // this line imports a gif into an image view and displays it to the user
-        imageView.image = UIImage.gif(name: "pepeD")
+        imageView.image = UIImage.gif(asset: "pepeD")
+        fireWorks.image = UIImage.gif(asset: "fireworks")
         
         // Loads the view controller containing the sign in screen after 5 seconds
         Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(loadLogInMenuVC), userInfo: nil, repeats: false)
@@ -28,6 +30,7 @@ class ThankYouScreenViewController: UIViewController {
     
     @objc func loadLogInMenuVC() { // instantiates the view controller containing the sign in screen
         let myVC = self.storyboard?.instantiateViewController(withIdentifier: "login") as! LogInMenuViewController
+        myVC.modalPresentationStyle = .fullScreen
         self.present(myVC, animated: true, completion: nil)
     }
     /*

@@ -94,12 +94,15 @@ class RoomViewController: UIViewController {
         
         if (avg >= 2.5) { // If the user's average score is 2.5 or greater, present them with a thank you screen before allowing them to return to the login menu
             let thankYou = self.storyboard?.instantiateViewController(withIdentifier: "thanks") as! ThankYouScreenViewController
+            thankYou.modalPresentationStyle = .fullScreen
             self.present(thankYou, animated: true, completion: nil)
         } else if (avg < 2.5) { // If the user's average is below a 2.5, present them with a screen apologizing for the service before allowing them to return to the login menu
             let badReview = self.storyboard?.instantiateViewController(withIdentifier: "badreview") as! PoorReviewViewController
+            badReview.modalPresentationStyle = .fullScreen
             self.present(badReview, animated: true, completion: nil)
         } else if (avg.isNaN) { // user did not enter anything into the survey, try again
             let redo = self.storyboard?.instantiateViewController(withIdentifier: "redo") as! RedoSurveyViewController
+            redo.modalPresentationStyle = .fullScreen
             self.present(redo, animated: true, completion: nil)
         }
     }

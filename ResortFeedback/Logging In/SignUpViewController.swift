@@ -9,7 +9,6 @@ import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var userAlreadyExists: UILabel!
     @IBOutlet weak var userT: UITextField!
     @IBOutlet weak var passT: UITextField!
     @IBOutlet weak var createAcc: UIButton!
@@ -24,23 +23,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         createAcc.layer.borderWidth = 4
         createAcc.layer.cornerRadius = 10.0
         createAcc.layer.cornerCurve = .continuous
-        
-        // by default, do not show the error that the user already exists
-        userAlreadyExists.isHidden = true
     }
     
 
     @IBAction func createNewUser(_ sender: Any) {
-        let data = DBHelper.inst.getData()
-        for g in data {
-            if (userT.text != g.username!) { // if username doesn't exist in core data, allow them to create user
-                let dic = ["username" : userT.text, "password" : passT.text]
-                DBHelper.inst.addData(object: dic as! [String:String])
-            } else if (userT.text == g.username!) { // if username does exist in core data, present a warning
-                userAlreadyExists.isHidden = false
-                
-            }
-        }
+        let dic = ["username" : userT.text, "password" : passT.text]
+        DBHelper.inst.addData(object: dic as! [String:String])
         userT.text = "" // reset the text fields to empty so the user can create another new user if they wish
         passT.text = ""
     }

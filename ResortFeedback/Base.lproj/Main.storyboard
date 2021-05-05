@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="VC3-5c-cuL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="VC3-5c-cuL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Welcome..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6o-yA-xVh">
@@ -36,16 +36,16 @@
                         <constraints>
                             <constraint firstItem="Fs9-zj-8Cy" firstAttribute="trailing" secondItem="F6o-yA-xVh" secondAttribute="trailing" constant="228" id="28f-TS-tla"/>
                             <constraint firstItem="Fs9-zj-8Cy" firstAttribute="trailing" secondItem="F6o-yA-xVh" secondAttribute="trailing" constant="82" id="7cX-aZ-z2Q"/>
-                            <constraint firstItem="VC3-5c-cuL" firstAttribute="leading" secondItem="Fs9-zj-8Cy" secondAttribute="leading" id="Fya-p0-AHW"/>
+                            <constraint firstItem="VC3-5c-cuL" firstAttribute="leading" secondItem="gp9-N0-uYe" secondAttribute="leading" id="Fya-p0-AHW"/>
                             <constraint firstItem="Fs9-zj-8Cy" firstAttribute="bottom" secondItem="F6o-yA-xVh" secondAttribute="bottom" constant="149" id="TtT-5L-R1S"/>
-                            <constraint firstItem="VC3-5c-cuL" firstAttribute="top" secondItem="Fs9-zj-8Cy" secondAttribute="top" id="Wct-fo-JU8"/>
-                            <constraint firstItem="VC3-5c-cuL" firstAttribute="bottom" secondItem="Fs9-zj-8Cy" secondAttribute="bottom" id="Why-9a-MPJ"/>
+                            <constraint firstItem="VC3-5c-cuL" firstAttribute="top" secondItem="gp9-N0-uYe" secondAttribute="top" id="Wct-fo-JU8"/>
+                            <constraint firstItem="VC3-5c-cuL" firstAttribute="bottom" secondItem="gp9-N0-uYe" secondAttribute="bottom" id="Why-9a-MPJ"/>
                             <constraint firstItem="F6o-yA-xVh" firstAttribute="top" secondItem="Fs9-zj-8Cy" secondAttribute="top" constant="186" id="ZZN-jX-ceM"/>
                             <constraint firstItem="F6o-yA-xVh" firstAttribute="leading" secondItem="Fs9-zj-8Cy" secondAttribute="leading" constant="81" id="eAM-yt-SZO"/>
                             <constraint firstItem="F6o-yA-xVh" firstAttribute="top" secondItem="Fs9-zj-8Cy" secondAttribute="top" constant="172" id="hfU-QN-JOT"/>
                             <constraint firstItem="F6o-yA-xVh" firstAttribute="leading" secondItem="Fs9-zj-8Cy" secondAttribute="leading" constant="227" id="lf0-8t-cJy"/>
                             <constraint firstItem="Fs9-zj-8Cy" firstAttribute="bottom" secondItem="F6o-yA-xVh" secondAttribute="bottom" constant="427" id="sQe-0D-aoA"/>
-                            <constraint firstItem="VC3-5c-cuL" firstAttribute="trailing" secondItem="Fs9-zj-8Cy" secondAttribute="trailing" id="ww5-74-aGM"/>
+                            <constraint firstItem="VC3-5c-cuL" firstAttribute="trailing" secondItem="gp9-N0-uYe" secondAttribute="trailing" id="ww5-74-aGM"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -98,351 +98,6 @@
             </objects>
             <point key="canvasLocation" x="-831.20000000000005" y="67.916041979010501"/>
         </scene>
-        <!--Admin View Controller-->
-        <scene sceneID="dpE-jW-WFv">
-            <objects>
-                <viewController storyboardIdentifier="admin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zJF-rg-En6" customClass="AdminViewController" customModule="ResortFeedback" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Eno-y2-Ene">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="dRW-7g-dyT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzq-Fc-q6I">
-                                <rect key="frame" x="244.5" y="512" width="90.5" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="View Users">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewAll:" destination="zJF-rg-En6" eventType="touchUpInside" id="HpV-IM-4bA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ws8-Bs-qG4">
-                                <rect key="frame" x="41.5" y="303" width="103" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Delete Gym ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteGymRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="ruO-ng-9TY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72B-HP-snV">
-                                <rect key="frame" x="244" y="303" width="91" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Delete Spa">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteSpaRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="Wj6-Ys-iL5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKW-F8-HfN">
-                                <rect key="frame" x="256" y="367" width="81" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="View Spa ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewSpaRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="2kU-03-V0A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jC-ro-4ql">
-                                <rect key="frame" x="31.5" y="447" width="123" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Delete Overall ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteOverallRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="Xsf-pS-NK0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-G1-dVw">
-                                <rect key="frame" x="244.5" y="251" width="90" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="qvS-2f-mKF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="View Food ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="qvS-2f-mKF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="qvS-2f-mKF"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="viewFoodRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="5hk-bA-yL9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFx-9h-PUt">
-                                <rect key="frame" x="28" y="52" width="30" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="X">
-                                    <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="cEb-Jt-A3f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqd-sq-RIQ">
-                                <rect key="frame" x="36.5" y="207" width="113" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Delete Room ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteRoomRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="VJn-P4-Adb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sB-v4-f0O">
-                                <rect key="frame" x="44" y="251" width="98" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="inT-i8-7G2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="View Room ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="inT-i8-7G2"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="inT-i8-7G2"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="viewRoomRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="JD2-mN-nA9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxy-rH-6qU">
-                                <rect key="frame" x="237" y="447" width="105" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Delete Users">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteAll:" destination="zJF-rg-En6" eventType="touchUpInside" id="3jX-QH-how"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuP-Cu-fqC">
-                                <rect key="frame" x="39" y="512" width="108" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="View Overall ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewOverallRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="q9U-Sx-p2o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFY-Jz-SF6">
-                                <rect key="frame" x="244" y="207" width="105" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Delete Food ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteFoodRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="4P6-ch-bMG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bu-8P-9QW">
-                                <rect key="frame" x="70" y="127" width="235" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="2LY-j5-804"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="40"/>
-                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2LY-j5-804"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="2LY-j5-804"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1J-Ce-hMZ">
-                                <rect key="frame" x="49" y="387" width="88" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="View Gym ">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewGymRatings:" destination="zJF-rg-En6" eventType="touchUpInside" id="C83-IM-Qw0"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="v8T-s4-wG2"/>
-                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="centerX" secondItem="72B-HP-snV" secondAttribute="centerX" id="099-9V-eDo"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="centerX" secondItem="Ws8-Bs-qG4" secondAttribute="centerX" id="17q-xT-fOR"/>
-                            <constraint firstItem="dRW-7g-dyT" firstAttribute="bottom" secondItem="Eno-y2-Ene" secondAttribute="bottom" id="4Ho-0T-jPu"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="centerX" secondItem="kuP-Cu-fqC" secondAttribute="centerX" id="4hm-UO-PGO"/>
-                            <constraint firstItem="Ws8-Bs-qG4" firstAttribute="top" secondItem="5sB-v4-f0O" secondAttribute="bottom" constant="16" id="4lR-xM-bVk"/>
-                            <constraint firstItem="dzq-Fc-q6I" firstAttribute="baseline" secondItem="kuP-Cu-fqC" secondAttribute="baseline" id="5Xf-ZB-SGs"/>
-                            <constraint firstItem="v8T-s4-wG2" firstAttribute="trailing" secondItem="NKW-F8-HfN" secondAttribute="trailing" constant="38" id="5lX-vW-6Ys"/>
-                            <constraint firstItem="5sB-v4-f0O" firstAttribute="top" secondItem="Eno-y2-Ene" secondAttribute="top" constant="251" id="6rM-0A-vJ6"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="centerX" secondItem="e1J-Ce-hMZ" secondAttribute="centerX" id="71N-63-ePk"/>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="centerX" secondItem="Cxy-rH-6qU" secondAttribute="centerX" id="ALg-7o-pPj"/>
-                            <constraint firstItem="NKW-F8-HfN" firstAttribute="top" secondItem="72B-HP-snV" secondAttribute="bottom" constant="28" id="CAI-g4-cb1"/>
-                            <constraint firstItem="3Bu-8P-9QW" firstAttribute="centerX" secondItem="dRW-7g-dyT" secondAttribute="centerX" id="GnZ-Tv-XvA"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="centerX" secondItem="zqd-sq-RIQ" secondAttribute="centerX" id="Gup-6K-Svf"/>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="72B-HP-snV" secondAttribute="leading" id="Hf4-vC-uJ0"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="baseline" secondItem="Cxy-rH-6qU" secondAttribute="baseline" id="I3h-5U-iFb"/>
-                            <constraint firstAttribute="bottom" secondItem="6jC-ro-4ql" secondAttribute="bottom" constant="184" id="OFt-Lg-hIj"/>
-                            <constraint firstItem="Cxy-rH-6qU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6jC-ro-4ql" secondAttribute="trailing" constant="82" id="RFH-mu-Nrx">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="v8T-s4-wG2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zfb-G1-dVw" secondAttribute="trailing" constant="41" id="SIN-cV-6mX">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="top" secondItem="lFY-Jz-SF6" secondAttribute="bottom" constant="8" id="SVc-zB-3pR"/>
-                            <constraint firstItem="dRW-7g-dyT" firstAttribute="trailing" secondItem="Eno-y2-Ene" secondAttribute="trailing" id="SZU-tk-k3y"/>
-                            <constraint firstItem="5sB-v4-f0O" firstAttribute="baseline" secondItem="zfb-G1-dVw" secondAttribute="baseline" id="TPh-cR-y8O"/>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="centerX" secondItem="NKW-F8-HfN" secondAttribute="centerX" constant="-7" id="XP8-bB-d9U"/>
-                            <constraint firstItem="3Bu-8P-9QW" firstAttribute="top" secondItem="v8T-s4-wG2" secondAttribute="top" constant="127" id="Zeb-L6-yIe"/>
-                            <constraint firstItem="3Bu-8P-9QW" firstAttribute="leading" secondItem="v8T-s4-wG2" secondAttribute="leading" constant="70" id="asD-14-r31"/>
-                            <constraint firstItem="5sB-v4-f0O" firstAttribute="top" secondItem="zqd-sq-RIQ" secondAttribute="bottom" constant="8" id="bBb-Sl-t8i"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="v8T-s4-wG2" secondAttribute="leading" constant="32" id="crx-yk-VUH">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="72B-HP-snV" firstAttribute="top" secondItem="zfb-G1-dVw" secondAttribute="bottom" constant="16" id="f22-CI-npT"/>
-                            <constraint firstItem="v8T-s4-wG2" firstAttribute="trailing" secondItem="lFY-Jz-SF6" secondAttribute="trailing" id="fKL-GP-CE8">
-                                <variation key="heightClass=regular-widthClass=compact" constant="26"/>
-                            </constraint>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lFY-Jz-SF6" secondAttribute="leading" id="gma-4L-VSk"/>
-                            <constraint firstItem="5sB-v4-f0O" firstAttribute="leading" secondItem="v8T-s4-wG2" secondAttribute="leading" constant="44" id="hQQ-Y2-rgD"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="top" secondItem="e1J-Ce-hMZ" secondAttribute="bottom" constant="24" id="ha8-KD-Keh"/>
-                            <constraint firstItem="6jC-ro-4ql" firstAttribute="centerX" secondItem="5sB-v4-f0O" secondAttribute="centerX" id="jta-aB-Zei"/>
-                            <constraint firstItem="dRW-7g-dyT" firstAttribute="top" secondItem="Eno-y2-Ene" secondAttribute="top" id="kIy-KY-bT2"/>
-                            <constraint firstItem="dRW-7g-dyT" firstAttribute="leading" secondItem="Eno-y2-Ene" secondAttribute="leading" id="kYE-rD-aJI"/>
-                            <constraint firstItem="zfb-G1-dVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dzq-Fc-q6I" secondAttribute="leading" id="uMS-8v-qja"/>
-                            <constraint firstItem="v8T-s4-wG2" firstAttribute="trailing" secondItem="dzq-Fc-q6I" secondAttribute="trailing" id="ucC-Ez-8gF">
-                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
-                            </constraint>
-                            <constraint firstItem="kuP-Cu-fqC" firstAttribute="top" secondItem="6jC-ro-4ql" secondAttribute="bottom" constant="29" id="xiq-4a-vjv"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="dRW-7g-dyT"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="4Ho-0T-jPu"/>
-                                <exclude reference="SZU-tk-k3y"/>
-                                <exclude reference="kIy-KY-bT2"/>
-                                <exclude reference="kYE-rD-aJI"/>
-                                <exclude reference="5lX-vW-6Ys"/>
-                                <exclude reference="SIN-cV-6mX"/>
-                                <exclude reference="fKL-GP-CE8"/>
-                                <exclude reference="ucC-Ez-8gF"/>
-                                <exclude reference="GnZ-Tv-XvA"/>
-                                <exclude reference="Zeb-L6-yIe"/>
-                                <exclude reference="asD-14-r31"/>
-                                <exclude reference="6rM-0A-vJ6"/>
-                                <exclude reference="TPh-cR-y8O"/>
-                                <exclude reference="bBb-Sl-t8i"/>
-                                <exclude reference="hQQ-Y2-rgD"/>
-                                <exclude reference="4lR-xM-bVk"/>
-                                <exclude reference="099-9V-eDo"/>
-                                <exclude reference="ALg-7o-pPj"/>
-                                <exclude reference="Hf4-vC-uJ0"/>
-                                <exclude reference="SVc-zB-3pR"/>
-                                <exclude reference="XP8-bB-d9U"/>
-                                <exclude reference="gma-4L-VSk"/>
-                                <exclude reference="uMS-8v-qja"/>
-                                <exclude reference="f22-CI-npT"/>
-                                <exclude reference="CAI-g4-cb1"/>
-                                <exclude reference="17q-xT-fOR"/>
-                                <exclude reference="4hm-UO-PGO"/>
-                                <exclude reference="71N-63-ePk"/>
-                                <exclude reference="Gup-6K-Svf"/>
-                                <exclude reference="I3h-5U-iFb"/>
-                                <exclude reference="OFt-Lg-hIj"/>
-                                <exclude reference="crx-yk-VUH"/>
-                                <exclude reference="ha8-KD-Keh"/>
-                                <exclude reference="jta-aB-Zei"/>
-                                <exclude reference="RFH-mu-Nrx"/>
-                                <exclude reference="xiq-4a-vjv"/>
-                                <exclude reference="5Xf-ZB-SGs"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="dRW-7g-dyT"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="4Ho-0T-jPu"/>
-                                <include reference="SZU-tk-k3y"/>
-                                <include reference="kIy-KY-bT2"/>
-                                <include reference="kYE-rD-aJI"/>
-                                <include reference="5lX-vW-6Ys"/>
-                                <include reference="SIN-cV-6mX"/>
-                                <include reference="fKL-GP-CE8"/>
-                                <include reference="ucC-Ez-8gF"/>
-                                <include reference="GnZ-Tv-XvA"/>
-                                <include reference="Zeb-L6-yIe"/>
-                                <include reference="asD-14-r31"/>
-                                <include reference="6rM-0A-vJ6"/>
-                                <include reference="TPh-cR-y8O"/>
-                                <include reference="bBb-Sl-t8i"/>
-                                <include reference="hQQ-Y2-rgD"/>
-                                <include reference="4lR-xM-bVk"/>
-                                <include reference="099-9V-eDo"/>
-                                <include reference="ALg-7o-pPj"/>
-                                <include reference="Hf4-vC-uJ0"/>
-                                <include reference="SVc-zB-3pR"/>
-                                <include reference="XP8-bB-d9U"/>
-                                <include reference="gma-4L-VSk"/>
-                                <include reference="uMS-8v-qja"/>
-                                <include reference="f22-CI-npT"/>
-                                <include reference="CAI-g4-cb1"/>
-                                <include reference="17q-xT-fOR"/>
-                                <include reference="4hm-UO-PGO"/>
-                                <include reference="71N-63-ePk"/>
-                                <include reference="Gup-6K-Svf"/>
-                                <include reference="I3h-5U-iFb"/>
-                                <include reference="OFt-Lg-hIj"/>
-                                <include reference="crx-yk-VUH"/>
-                                <include reference="ha8-KD-Keh"/>
-                                <include reference="jta-aB-Zei"/>
-                                <include reference="RFH-mu-Nrx"/>
-                                <include reference="xiq-4a-vjv"/>
-                                <include reference="5Xf-ZB-SGs"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KP3-O1-zWE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3231.1999999999998" y="465.51724137931041"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -451,7 +106,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="Otg-do-GAM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="Otg-do-GAM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter username..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-OF-aRN">
@@ -475,7 +130,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="19"/>
                                 <state key="normal" title="Forgot Password?">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPassWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESc-0h-34K"/>
@@ -486,7 +141,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWw-q6-mJ8"/>
@@ -497,7 +152,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="28"/>
                                 <state key="normal" title="Create Account">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hc2-Ll-9Z7"/>
@@ -516,23 +171,16 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
                                 <state key="normal" title="Change Password?">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="updatePassWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ea-hP-rfJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid login!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pro-xt-6P7">
-                                <rect key="frame" x="134" y="76" width="108" height="24"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pro-xt-6P7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="10B-z7-NDr"/>
                             <constraint firstItem="ahc-eH-t9Y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1Nj-Zp-EM5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WG9-kp-G0U" secondAttribute="trailing" constant="242" id="3hA-jT-04s"/>
                             <constraint firstItem="AuY-ub-Zo7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Lm-Gb-Bbx"/>
@@ -546,7 +194,6 @@
                             <constraint firstItem="ahc-eH-t9Y" firstAttribute="leading" secondItem="AuY-ub-Zo7" secondAttribute="leading" id="ELq-Em-ct9"/>
                             <constraint firstItem="17K-q0-Hvm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="Ewd-kK-8rZ"/>
                             <constraint firstItem="UHj-qy-wKa" firstAttribute="leading" secondItem="m60-i4-8fj" secondAttribute="trailing" constant="45" id="FSe-FA-HIo"/>
-                            <constraint firstItem="pro-xt-6P7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="Fi6-Uf-2yJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="17K-q0-Hvm" secondAttribute="trailing" constant="184" id="H4m-8p-JCK"/>
                             <constraint firstItem="m60-i4-8fj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="H7G-Nw-90F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UHj-qy-wKa" secondAttribute="trailing" constant="186" id="H8M-9C-fQQ"/>
@@ -576,9 +223,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AuY-ub-Zo7" secondAttribute="bottom" constant="196" id="YUf-mQ-rFD">
                                 <variation key="heightClass=regular-widthClass=compact" constant="66"/>
                             </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pro-xt-6P7" secondAttribute="trailing" constant="133" id="YqQ-zQ-D48"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="17K-q0-Hvm" secondAttribute="trailing" constant="31" id="ZoX-kW-izA"/>
-                            <constraint firstItem="6r7-OF-aRN" firstAttribute="top" secondItem="pro-xt-6P7" secondAttribute="bottom" constant="45" id="bBE-DW-E0i"/>
                             <constraint firstItem="CFl-ax-SCD" firstAttribute="top" secondItem="17K-q0-Hvm" secondAttribute="bottom" constant="66" id="bIg-aY-jdB"/>
                             <constraint firstItem="WG9-kp-G0U" firstAttribute="top" secondItem="m60-i4-8fj" secondAttribute="bottom" constant="8" id="bNs-YW-yZU"/>
                             <constraint firstItem="CFl-ax-SCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="dMp-nl-ViL"/>
@@ -616,17 +261,13 @@
                                 <exclude reference="TGM-te-urQ"/>
                                 <exclude reference="Tqn-gx-dha"/>
                                 <exclude reference="YUf-mQ-rFD"/>
-                                <exclude reference="YqQ-zQ-D48"/>
                                 <exclude reference="ZoX-kW-izA"/>
                                 <exclude reference="tVC-7c-MtZ"/>
                                 <exclude reference="w05-Qr-R87"/>
                                 <exclude reference="N5E-8s-PBG"/>
-                                <exclude reference="bBE-DW-E0i"/>
                                 <exclude reference="fIf-U9-gJj"/>
                                 <exclude reference="koC-43-ODl"/>
                                 <exclude reference="zCR-OW-Ji5"/>
-                                <exclude reference="10B-z7-NDr"/>
-                                <exclude reference="Fi6-Uf-2yJ"/>
                                 <exclude reference="Ewd-kK-8rZ"/>
                                 <exclude reference="MR6-AS-2cg"/>
                                 <exclude reference="dus-Lb-2PF"/>
@@ -710,14 +351,10 @@
                                 <include reference="PNg-qe-n5h"/>
                                 <include reference="TGM-te-urQ"/>
                                 <include reference="YUf-mQ-rFD"/>
-                                <include reference="YqQ-zQ-D48"/>
                                 <include reference="ZoX-kW-izA"/>
                                 <include reference="tVC-7c-MtZ"/>
                                 <include reference="N5E-8s-PBG"/>
-                                <include reference="bBE-DW-E0i"/>
                                 <include reference="fIf-U9-gJj"/>
-                                <include reference="10B-z7-NDr"/>
-                                <include reference="Fi6-Uf-2yJ"/>
                                 <include reference="Ewd-kK-8rZ"/>
                                 <include reference="ism-2z-fHl"/>
                                 <include reference="tYh-oH-6xb"/>
@@ -745,7 +382,6 @@
                         <outlet property="changePass" destination="ahc-eH-t9Y" id="JoB-b4-pOf"/>
                         <outlet property="createAcc" destination="UHj-qy-wKa" id="SJD-Ta-iP3"/>
                         <outlet property="forgotPass" destination="AuY-ub-Zo7" id="4mK-H8-vcl"/>
-                        <outlet property="invalidLogin" destination="pro-xt-6P7" id="P79-wy-qXK"/>
                         <outlet property="loginButton" destination="m60-i4-8fj" id="3tb-5p-AJ7"/>
                         <outlet property="passWord" destination="17K-q0-Hvm" id="jmA-ST-ulX"/>
                         <outlet property="sw" destination="CFl-ax-SCD" id="7N5-ZK-Z4l"/>
@@ -764,7 +400,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="rBL-oN-SDP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="rBL-oN-SDP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Confirm new password..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Puy-ak-sAO">
@@ -787,7 +423,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Update">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="updatePassWord:" destination="rAZ-lz-4Ul" eventType="touchUpInside" id="X09-YW-HlB"/>
@@ -868,7 +504,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="B3s-mO-s9I">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="B3s-mO-s9I">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1O-kI-WzJ" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
@@ -889,7 +525,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -911,7 +547,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -933,7 +569,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -979,7 +615,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1001,7 +637,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1010,7 +646,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="ML2-Ao-7zu" eventType="touchUpInside" id="2IS-49-GAx"/>
@@ -1211,7 +847,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="pIA-X3-wUM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="pIA-X3-wUM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig8-pH-Eqw">
@@ -1234,7 +870,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="29"/>
                                 <state key="normal" title="Request Password">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPassWord:" destination="5kj-US-Ymn" eventType="touchUpInside" id="c2f-hr-Ffb"/>
@@ -1307,7 +943,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-IS-Q8u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-IS-Q8u">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q7-pG-jLW">
@@ -1560,7 +1196,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Gym" translatesAutoresizingMaskIntoConstraints="NO" id="YT4-wM-AhF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Gym" translatesAutoresizingMaskIntoConstraints="NO" id="YT4-wM-AhF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-kf-e6F" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
@@ -1581,7 +1217,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1633,7 +1269,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1655,7 +1291,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1677,7 +1313,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1699,7 +1335,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1708,7 +1344,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="4oO-d2-CEx" eventType="touchUpInside" id="Khc-6P-pXW"/>
@@ -1943,7 +1579,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Room" translatesAutoresizingMaskIntoConstraints="NO" id="WEy-11-scA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Room" translatesAutoresizingMaskIntoConstraints="NO" id="WEy-11-scA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRa-kb-f5N" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
@@ -1964,7 +1600,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1998,7 +1634,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2026,7 +1662,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2048,7 +1684,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2070,7 +1706,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2091,7 +1727,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="nPw-62-8CL" eventType="touchUpInside" id="zbl-Kn-qhS"/>
@@ -2459,7 +2095,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-UM-AP1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-UM-AP1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which would you like to do today? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZ7-gz-sz1">
@@ -2473,7 +2109,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Survey">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="hPP-PJ-tAX" kind="presentation" modalPresentationStyle="fullScreen" id="ujY-I5-MSr"/>
@@ -2490,7 +2126,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="X Log Out">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="OCO-hv-Q1D"/>
@@ -2504,7 +2140,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="View Offers">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Ozq-mf-CQO" kind="presentation" modalPresentationStyle="fullScreen" id="D0I-Hf-6Jn"/>
@@ -2711,7 +2347,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="BbP-A3-AZq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="BbP-A3-AZq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="kXn-MY-ZsH" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
@@ -2732,7 +2368,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2754,7 +2390,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2776,7 +2412,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2798,7 +2434,7 @@
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2852,7 +2488,7 @@ menu selection?</string>
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2861,7 +2497,7 @@ menu selection?</string>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="Sve-d5-bQw" eventType="touchUpInside" id="cfi-fJ-cXI"/>
@@ -3077,7 +2713,7 @@ menu selection?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-Zi-oWG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Overall" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-Zi-oWG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter username..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tSS-5s-Id1">
@@ -3105,19 +2741,12 @@ menu selection?</string>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="27"/>
                                 <state key="normal" title="Create Account">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="createNewUser:" destination="Xad-SJ-lm3" eventType="touchUpInside" id="SGU-w3-dhy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User already exists." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8r-3o-676">
-                                <rect key="frame" x="108" y="66" width="159" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UXZ-ZF-xbD"/>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3192,7 +2821,6 @@ menu selection?</string>
                     <connections>
                         <outlet property="createAcc" destination="Swo-IK-nle" id="EkU-7q-EEa"/>
                         <outlet property="passT" destination="X66-0I-FZ6" id="xTR-PD-dDB"/>
-                        <outlet property="userAlreadyExists" destination="K8r-3o-676" id="QLq-J4-vPm"/>
                         <outlet property="userT" destination="tSS-5s-Id1" id="Jiy-VD-YJr"/>
                     </connections>
                 </viewController>
@@ -3208,7 +2836,7 @@ menu selection?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Spa" translatesAutoresizingMaskIntoConstraints="NO" id="Pj8-bs-vZn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Spa" translatesAutoresizingMaskIntoConstraints="NO" id="Pj8-bs-vZn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fie-PU-M99" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
@@ -3229,7 +2857,7 @@ menu selection?</string>
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -3305,7 +2933,7 @@ to enough fresh towels?</string>
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -3327,7 +2955,7 @@ to enough fresh towels?</string>
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -3349,7 +2977,7 @@ to enough fresh towels?</string>
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -3364,7 +2992,7 @@ to enough fresh towels?</string>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="7CM-XJ-dIS" eventType="touchUpInside" id="KCY-Q9-oJC"/>
@@ -3392,8 +3020,8 @@ to enough fresh towels?</string>
                             <constraint firstItem="6cR-Wa-DkM" firstAttribute="top" secondItem="TxL-SA-XPe" secondAttribute="top" constant="35" id="DVE-HL-DJa">
                                 <variation key="heightClass=regular-widthClass=compact" constant="44"/>
                             </constraint>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="leading" secondItem="TxL-SA-XPe" secondAttribute="leading" id="Dh2-4f-bio"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="trailing" secondItem="TxL-SA-XPe" secondAttribute="trailing" id="K4d-Fa-7Lc"/>
+                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="leading" secondItem="qxD-GX-mLT" secondAttribute="leading" id="Dh2-4f-bio"/>
+                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="trailing" secondItem="qxD-GX-mLT" secondAttribute="trailing" id="K4d-Fa-7Lc"/>
                             <constraint firstItem="VTk-e6-hEq" firstAttribute="leading" secondItem="TxL-SA-XPe" secondAttribute="leading" constant="31" id="L9n-UE-ZBp"/>
                             <constraint firstItem="VTk-e6-hEq" firstAttribute="top" secondItem="VeF-9a-mQ9" secondAttribute="bottom" constant="1" id="OMK-At-3gW"/>
                             <constraint firstItem="OUE-Ci-COy" firstAttribute="leading" secondItem="VeF-9a-mQ9" secondAttribute="leading" id="SSB-06-Lz2"/>
@@ -3410,20 +3038,14 @@ to enough fresh towels?</string>
                             <constraint firstItem="fRk-9B-ycY" firstAttribute="centerX" secondItem="Pj8-bs-vZn" secondAttribute="centerX" id="dqj-8k-D7v">
                                 <variation key="heightClass=regular-widthClass=compact" constant="116"/>
                             </constraint>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="trailing" secondItem="TxL-SA-XPe" secondAttribute="trailing" id="fl7-Vd-fmm"/>
                             <constraint firstItem="pck-N7-jIg" firstAttribute="top" secondItem="fie-PU-M99" secondAttribute="bottom" constant="48" id="hQG-mv-rBY"/>
                             <constraint firstItem="1Nz-9U-dGa" firstAttribute="centerX" secondItem="cBH-fL-m7y" secondAttribute="centerX" id="kb5-DK-agl"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="leading" secondItem="TxL-SA-XPe" secondAttribute="leading" id="l0R-U4-Agu"/>
                             <constraint firstItem="pck-N7-jIg" firstAttribute="top" secondItem="cBH-fL-m7y" secondAttribute="bottom" constant="19" id="mcN-j0-wfR"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="trailing" secondItem="TxL-SA-XPe" secondAttribute="trailing" id="mup-rT-F0Q"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="leading" secondItem="TxL-SA-XPe" secondAttribute="leading" id="oDJ-cD-zh1"/>
                             <constraint firstItem="OUE-Ci-COy" firstAttribute="leading" secondItem="ySb-NA-unZ" secondAttribute="leading" id="od4-gg-cFr"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="top" secondItem="TxL-SA-XPe" secondAttribute="top" id="pKu-Mk-bvn"/>
+                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="top" secondItem="qxD-GX-mLT" secondAttribute="top" id="pKu-Mk-bvn"/>
                             <constraint firstItem="1Nz-9U-dGa" firstAttribute="centerX" secondItem="e1g-zt-3wz" secondAttribute="centerX" id="pty-k1-UHB"/>
                             <constraint firstItem="fie-PU-M99" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Nz-9U-dGa" secondAttribute="leading" id="qbi-47-bqc"/>
                             <constraint firstItem="fie-PU-M99" firstAttribute="leading" secondItem="pck-N7-jIg" secondAttribute="leading" id="ste-5m-Udb"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="top" secondItem="TxL-SA-XPe" secondAttribute="top" id="t0W-Z4-3nc"/>
-                            <constraint firstItem="Pj8-bs-vZn" firstAttribute="top" secondItem="TxL-SA-XPe" secondAttribute="top" id="vrf-HP-x2j"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -3432,10 +3054,6 @@ to enough fresh towels?</string>
                             <mask key="constraints">
                                 <exclude reference="Dh2-4f-bio"/>
                                 <exclude reference="K4d-Fa-7Lc"/>
-                                <exclude reference="fl7-Vd-fmm"/>
-                                <exclude reference="l0R-U4-Agu"/>
-                                <exclude reference="t0W-Z4-3nc"/>
-                                <exclude reference="vrf-HP-x2j"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -3445,10 +3063,6 @@ to enough fresh towels?</string>
                             <mask key="constraints">
                                 <include reference="Dh2-4f-bio"/>
                                 <include reference="K4d-Fa-7Lc"/>
-                                <include reference="fl7-Vd-fmm"/>
-                                <include reference="l0R-U4-Agu"/>
-                                <include reference="t0W-Z4-3nc"/>
-                                <include reference="vrf-HP-x2j"/>
                             </mask>
                         </variation>
                     </view>
@@ -3474,17 +3088,21 @@ to enough fresh towels?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="End" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-ng-EDh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="End" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-ng-EDh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for submitting!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ona-5Q-hWo">
                                 <rect key="frame" x="0.0" y="323.5" width="366" height="36"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvG-32-P7q">
+                                <rect key="frame" x="28" y="41" width="302" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMB-Fh-SZH">
-                                <rect key="frame" x="67" y="458" width="240" height="128"/>
+                                <rect key="frame" x="59" y="153" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -3528,6 +3146,7 @@ to enough fresh towels?</string>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="fireWorks" destination="nvG-32-P7q" id="WDe-Yk-VSa"/>
                         <outlet property="imageView" destination="WMB-Fh-SZH" id="TAP-77-384"/>
                     </connections>
                 </viewController>
@@ -3543,15 +3162,19 @@ to enough fresh towels?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="End" translatesAutoresizingMaskIntoConstraints="NO" id="IO1-2Y-8nP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="End" translatesAutoresizingMaskIntoConstraints="NO" id="IO1-2Y-8nP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="We are sorry about your poor experience." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyG-Pz-QBd">
                                 <rect key="frame" x="26" y="231" width="323" height="143.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9JU-w7-vjy">
+                                <rect key="frame" x="55" y="53" width="275" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dCN-b2-tWe"/>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3595,6 +3218,9 @@ to enough fresh towels?</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="9JU-w7-vjy" id="AfY-bB-Hl9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIM-fZ-4Ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3608,7 +3234,7 @@ to enough fresh towels?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="End" translatesAutoresizingMaskIntoConstraints="NO" id="fY5-3E-p2J">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="End" translatesAutoresizingMaskIntoConstraints="NO" id="fY5-3E-p2J">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eV-RP-hEg">
@@ -3616,9 +3242,13 @@ to enough fresh towels?</string>
                                 <string key="text">You did not complete 
 the survey. Please try again.</string>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-h4-x1a">
+                                <rect key="frame" x="50" y="47" width="279" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rev-U4-RO0"/>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3659,6 +3289,9 @@ the survey. Please try again.</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Z9d-h4-x1a" id="y6X-ld-QFX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o20-Vs-7Hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

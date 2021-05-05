@@ -26,7 +26,6 @@
 		8B3B8BE726376320000C779E /* Spa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */; };
 		8B3B8BE826376320000C779E /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */; };
 		8B3B8BE926376320000C779E /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */; };
-		8B659FF22641C4CE00574981 /* pepeD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B659FF12641C4CE00574981 /* pepeD.gif */; };
 		8B6608FA264192D100A494A0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6608F9264192D100A494A0 /* WelcomeViewController.swift */; };
 		8B7D76BD262E262300CD5F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76BC262E262300CD5F84 /* AppDelegate.swift */; };
 		8B7D76BF262E262300CD5F84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D76BE262E262300CD5F84 /* SceneDelegate.swift */; };
@@ -82,7 +81,6 @@
 		8B3B8BDD26376320000C779E /* Spa+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spa+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8B3B8BDE26376320000C779E /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8B3B8BDF26376320000C779E /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8B659FF12641C4CE00574981 /* pepeD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pepeD.gif; path = ../../../../Downloads/pepeD.gif; sourceTree = "<group>"; };
 		8B6608F9264192D100A494A0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8B7D76B9262E262300CD5F84 /* ResortFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7D76BC262E262300CD5F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 		8B7D76BB262E262300CD5F84 /* ResortFeedback */ = {
 			isa = PBXGroup;
 			children = (
-				8B659FF12641C4CE00574981 /* pepeD.gif */,
 				8BB294D52641A6A8000BCD02 /* End Screens */,
 				8BB294D42641A695000BCD02 /* Logging In */,
 				8BB294D32641A64C000BCD02 /* Survey */,
@@ -322,7 +319,6 @@
 				8B7D76CC262E262600CD5F84 /* LaunchScreen.storyboard in Resources */,
 				8B7D76C4262E262300CD5F84 /* Main.storyboard in Resources */,
 				8B924C4D2641D09E00FC5B82 /* Assets.xcassets in Resources */,
-				8B659FF22641C4CE00574981 /* pepeD.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

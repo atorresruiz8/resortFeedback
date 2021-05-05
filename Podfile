@@ -8,5 +8,4 @@ target 'ResortFeedback' do
   # Pods for ResortFeedback
 
 pod 'SwiftGifOrigin'
-pod 'Gifu'
 end

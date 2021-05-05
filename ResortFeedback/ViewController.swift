@@ -22,9 +22,6 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
     @IBOutlet weak var forgotPass: UIButton!
     @IBOutlet weak var changePass: UIButton!
     
-    
-    @IBOutlet weak var invalidLogin: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,8 +47,6 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
         changePass.layer.cornerRadius = 10.0
         changePass.layer.cornerCurve = .continuous
         
-        invalidLogin.isHidden = true
-        
         if (sw.isOn) { // if the switch is on, remember the last username/password combo entered and automatically enter it for the user
             userName.text = ud.string(forKey: "username")
             passWord.text = ud.string(forKey: "password")
@@ -59,18 +54,19 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
     }
 
     @IBAction func signIn(_ sender: Any) { // this function verifies if the entered username and password match values stored in the coredata
-        if (userName.text == "admin" && passWord.text == "admin") { // for my testing purposes, this login presents me an admin page where I can easily view what is in the CoreData for each entity and delete them if needed
-            let adminPage = self.storyboard?.instantiateViewController(withIdentifier: "admin") as! AdminViewController
-            self.present(adminPage, animated: true, completion: nil)
-        }
+//        if (userName.text == "admin" && passWord.text == "admin") { // for my testing purposes, this login presents me an admin page where I can easily view what is in the CoreData for each entity and delete them if needed
+//            let adminPage = self.storyboard?.instantiateViewController(withIdentifier: "admin") as! AdminViewController
+//            adminPage.modalPresentationStyle = .fullScreen
+//            self.present(adminPage, animated: true, completion: nil)
+//        }
+        // admin login page was removed upon finishing project. it was merely a collection of buttons that would run view all and delete all functions on each Core Data entity
         
         let data = DBHelper.inst.getData()
         for g in data {
             if (userName.text == g.username! && passWord.text == g.password!) { // username and password are in core data, let the user sign in
                 let signIn = self.storyboard?.instantiateViewController(withIdentifier: "login") as! LogInMenuViewController
+                signIn.modalPresentationStyle = .fullScreen
                 self.present(signIn, animated: true, completion: nil)
-            } else { // we have an invalid login, don't hide the label anymore
-                invalidLogin.isHidden = false
             }
         }
     }
@@ -78,12 +74,14 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
     
     @IBAction func signUp(_ sender: UIButton) { // this creates a new key-value pair that stores the user's login info by taking them to a new screen
         let signUp = self.storyboard?.instantiateViewController(withIdentifier: "signup") as! SignUpViewController
+        signUp.modalPresentationStyle = .fullScreen
         self.present(signUp, animated: true, completion: nil)
     }
     
     
     @IBAction func updatePassWord(_ sender: Any) { // this allows the user to change/update their password by taking them to a new screen
         let change = self.storyboard?.instantiateViewController(withIdentifier: "change") as! ChangePassWordViewController
+        change.modalPresentationStyle = .fullScreen
         self.present(change, animated: true, completion: nil)
     }
     
@@ -107,6 +105,7 @@ class ViewController: UIViewController, UITextFieldDelegate { // TextFieldDelega
     
     @IBAction func forgotPassWord(_ sender: Any) { // this allows the user to reset their password if they forgot it. first checks to see if the username is in the coredata. brings up a new screen
         let forgot = self.storyboard?.instantiateViewController(withIdentifier: "forgot") as! ForgotPassWordViewController
+        forgot.modalPresentationStyle = .fullScreen
         self.present(forgot, animated: true, completion: nil)
     }
     
