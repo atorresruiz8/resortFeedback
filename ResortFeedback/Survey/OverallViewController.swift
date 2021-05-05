@@ -86,20 +86,20 @@ class OverallViewController: UIViewController {
         }
     }
     
-    @IBAction func calcAvg(_ sender: Any) {
+    @IBAction func calcAvg(_ sender: Any) { // this is mostly for testing purposes for me to verify that data is properly being passed along between view controllers
         let sumArray = ratingArr.reduce(0, +) // reduces the array, one entry at a time and adds the values along the way
         let avg = sumArray / Double(ratingArr.count) // take the average to find the average score the user gave for this survey
-        print("Average score from this user is:", avg)
+        print("Average score from this user is in total is:", avg)
         
-        if (avg >= 2.5) { // If the user's average score is 2.5 or greater, present them with a thank you screen before allowing them to return to the login menu
+        if (avg >= 2.5 && ratingArr.count == 25) { // If the user's average score is 2.5 or greater, present them with a thank you screen before allowing them to return to the login menu
             let thankYou = self.storyboard?.instantiateViewController(withIdentifier: "thanks") as! ThankYouScreenViewController
             thankYou.modalPresentationStyle = .fullScreen
             self.present(thankYou, animated: true, completion: nil)
-        } else if (avg < 2.5) { // If the user's average is below a 2.5, present them with a screen apologizing for the service before allowing them to return to the login menu
+        } else if (avg < 2.5 && ratingArr.count == 25) { // If the user's average is below a 2.5, present them with a screen apologizing for the service before allowing them to return to the login menu
             let badReview = self.storyboard?.instantiateViewController(withIdentifier: "badreview") as! PoorReviewViewController
             badReview.modalPresentationStyle = .fullScreen
             self.present(badReview, animated: true, completion: nil)
-        } else if (avg.isNaN) { // user did not enter anything into the survey, try again
+        } else if (avg.isNaN || ratingArr.count != 25) { // user did not complete the survey, try again
             let redo = self.storyboard?.instantiateViewController(withIdentifier: "redo") as! RedoSurveyViewController
             redo.modalPresentationStyle = .fullScreen
             self.present(redo, animated: true, completion: nil)

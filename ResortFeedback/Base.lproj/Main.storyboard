@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTJ-93-R7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-831.20000000000005" y="67.916041979010501"/>
+            <point key="canvasLocation" x="-831" y="468"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -390,7 +390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392.80000000000001" y="67.916041979010501"/>
+            <point key="canvasLocation" x="716" y="468"/>
         </scene>
         <!--Change Pass Word View Controller-->
         <scene sceneID="1fv-X2-hoP">
@@ -494,7 +494,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIV-Ug-efN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569.5652173913045" y="467.41071428571428"/>
+            <point key="canvasLocation" x="1969" y="468"/>
         </scene>
         <!--Overall-->
         <scene sceneID="cHJ-fj-eVb">
@@ -620,7 +620,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-cW-zUm" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="51" y="521" width="324" height="50"/>
+                                <rect key="frame" x="51" y="521" width="324" height="99"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -641,8 +641,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you enjoy your stay?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP7-MM-FgQ">
+                                <rect key="frame" x="35" y="63" width="297" height="36"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXy-59-Sdh">
-                                <rect key="frame" x="255" y="570" width="104" height="48"/>
+                                <rect key="frame" x="255" y="599" width="104" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Submit">
@@ -652,12 +658,6 @@
                                     <action selector="calcAvg:" destination="ML2-Ao-7zu" eventType="touchUpInside" id="2IS-49-GAx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you enjoy your stay?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP7-MM-FgQ">
-                                <rect key="frame" x="35" y="63" width="297" height="36"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QOc-SO-89Z"/>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -701,7 +701,7 @@
                             <constraint firstItem="eFY-l9-ZDm" firstAttribute="leading" secondItem="QOc-SO-89Z" secondAttribute="leading" constant="8" id="NpX-gK-g41"/>
                             <constraint firstItem="TSv-Em-CkQ" firstAttribute="leading" secondItem="QOc-SO-89Z" secondAttribute="leading" constant="51" id="P0k-qO-gQO"/>
                             <constraint firstItem="QOc-SO-89Z" firstAttribute="bottom" secondItem="FXy-59-Sdh" secondAttribute="bottom" constant="9" id="PhU-2K-Sna">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="J1O-kI-WzJ" firstAttribute="top" secondItem="Mrw-XF-vaz" secondAttribute="top" constant="430" id="QB6-kN-lGx"/>
                             <constraint firstItem="TSv-Em-CkQ" firstAttribute="trailing" secondItem="QOc-SO-89Z" secondAttribute="trailing" id="R6H-f1-C9I"/>
@@ -837,7 +837,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0C-1V-d90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5949.6000000000004" y="-2432.8335832083958"/>
+            <point key="canvasLocation" x="5708" y="-2434"/>
         </scene>
         <!--Forgot Pass Word View Controller-->
         <scene sceneID="1gN-m2-aFJ">
@@ -933,7 +933,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f37-OP-YYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1568.8" y="1283.2083958020989"/>
+            <point key="canvasLocation" x="1969" y="1340"/>
         </scene>
         <!--Offers-->
         <scene sceneID="m9L-Ks-fFF">
@@ -1200,7 +1200,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-kf-e6F" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="35" y="394" width="324" height="50"/>
+                                <rect key="frame" x="35" y="443" width="324" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -1228,13 +1228,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate your experience." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxR-T6-Nmo">
-                                <rect key="frame" x="69" y="355" width="222" height="30"/>
+                                <rect key="frame" x="69" y="404" width="222" height="30"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="25"/>
                                 <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you rate our personal trainers?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-Th-JEg">
-                                <rect key="frame" x="20" y="452" width="320" height="55"/>
+                                <rect key="frame" x="20" y="501" width="320" height="55"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="23"/>
                                 <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1296,7 +1296,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sv-M0-SPc" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="35" y="293" width="270" height="66"/>
+                                <rect key="frame" x="35" y="293" width="270" height="115"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -1318,7 +1318,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEz-Aj-hA8" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="35" y="495" width="324" height="65"/>
+                                <rect key="frame" x="35" y="544" width="324" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -1340,14 +1340,15 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlc-px-KlL">
-                                <rect key="frame" x="232" y="558" width="127" height="48"/>
+                                <rect key="frame" x="232" y="607" width="127" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="4oO-d2-CEx" eventType="touchUpInside" id="Khc-6P-pXW"/>
+                                    <segue destination="Sve-d5-bQw" kind="presentation" modalPresentationStyle="fullScreen" id="tpH-4x-eB2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1569,7 +1570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HP-5u-7Fh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2829.5999999999999" y="-2432.8335832083958"/>
+            <point key="canvasLocation" x="1969" y="-2433"/>
         </scene>
         <!--Room-->
         <scene sceneID="9hG-Vz-yy3">
@@ -1723,14 +1724,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-4n-hbt">
-                                <rect key="frame" x="225" y="545" width="115" height="64"/>
+                                <rect key="frame" x="225" y="572" width="115" height="54"/>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="nPw-62-8CL" eventType="touchUpInside" id="zbl-Kn-qhS"/>
+                                    <segue destination="4oO-d2-CEx" kind="presentation" modalPresentationStyle="fullScreen" id="LrA-YZ-D3f"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1738,13 +1740,13 @@
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X6V-4n-hbt" firstAttribute="top" secondItem="hQv-ZX-W0Q" secondAttribute="bottom" constant="20" id="0Cq-aL-Afw">
-                                <variation key="heightClass=regular-widthClass=compact" constant="8.5"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="35.5"/>
                             </constraint>
                             <constraint firstItem="hQv-ZX-W0Q" firstAttribute="leading" secondItem="gRa-kb-f5N" secondAttribute="trailing" id="0pJ-9H-IUp">
                                 <variation key="heightClass=compact-widthClass=compact" constant="65"/>
                             </constraint>
                             <constraint firstItem="grS-T1-KRp" firstAttribute="bottom" secondItem="X6V-4n-hbt" secondAttribute="bottom" constant="5" id="1zU-tQ-AtY">
-                                <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="41"/>
                             </constraint>
                             <constraint firstItem="grS-T1-KRp" firstAttribute="trailing" secondItem="X6V-4n-hbt" secondAttribute="trailing" constant="96" id="20s-Sx-3ym"/>
                             <constraint firstItem="Hud-FG-DTA" firstAttribute="leading" secondItem="E0B-Vz-BV7" secondAttribute="trailing" constant="19" id="2dU-Aq-sbo">
@@ -1784,7 +1786,7 @@
                             </constraint>
                             <constraint firstItem="yEh-pa-Uzg" firstAttribute="leading" secondItem="Fcv-Eh-5ET" secondAttribute="trailing" constant="29" id="DtD-Uo-5q6"/>
                             <constraint firstItem="X6V-4n-hbt" firstAttribute="top" secondItem="hQv-ZX-W0Q" secondAttribute="bottom" constant="20" id="E95-cv-yPQ">
-                                <variation key="heightClass=regular-widthClass=compact" constant="8.5"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="35.5"/>
                             </constraint>
                             <constraint firstItem="Hud-FG-DTA" firstAttribute="top" secondItem="RTY-gO-hGu" secondAttribute="bottom" constant="34" id="FRH-Ei-x9p">
                                 <variation key="heightClass=regular-widthClass=compact" constant="14"/>
@@ -1826,7 +1828,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="X6V-4n-hbt" firstAttribute="top" secondItem="P2r-vC-JJz" secondAttribute="bottom" constant="66.5" id="UVg-de-ySc">
-                                <variation key="heightClass=regular-widthClass=compact" constant="55"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="82"/>
                             </constraint>
                             <constraint firstItem="X6V-4n-hbt" firstAttribute="leading" secondItem="RTY-gO-hGu" secondAttribute="trailing" constant="170" id="W98-hN-O0A"/>
                             <constraint firstItem="oGJ-bH-aaM" firstAttribute="top" secondItem="E0B-Vz-BV7" secondAttribute="bottom" constant="60" id="WjD-aG-EgZ">
@@ -2085,7 +2087,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5X1-9P-7Lw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="-2434.6326836581711"/>
+            <point key="canvasLocation" x="716" y="-2433"/>
         </scene>
         <!--Log In Menu View Controller-->
         <scene sceneID="O0f-Vu-e0D">
@@ -2112,7 +2114,7 @@
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hPP-PJ-tAX" kind="presentation" modalPresentationStyle="fullScreen" id="ujY-I5-MSr"/>
+                                    <segue destination="nPw-62-8CL" kind="presentation" modalPresentationStyle="fullScreen" id="w55-sV-Lsm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-rw-xlb">
@@ -2317,28 +2319,6 @@
             </objects>
             <point key="canvasLocation" x="-831.20000000000005" y="-1867.0164917541231"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="l9Z-fh-6Yi">
-            <objects>
-                <tabBarController storyboardIdentifier="signedIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hPP-PJ-tAX" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sKo-Hk-or8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                        <color key="selectedImageTintColor" systemColor="labelColor"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="nPw-62-8CL" kind="relationship" relationship="viewControllers" id="uWj-ug-zrr"/>
-                        <segue destination="4oO-d2-CEx" kind="relationship" relationship="viewControllers" id="Zca-9r-IiM"/>
-                        <segue destination="Sve-d5-bQw" kind="relationship" relationship="viewControllers" id="HX1-Qd-XTo"/>
-                        <segue destination="7CM-XJ-dIS" kind="relationship" relationship="viewControllers" id="PFF-dn-XRv"/>
-                        <segue destination="ML2-Ao-7zu" kind="relationship" relationship="viewControllers" id="FyY-6V-xhQ"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1nG-4X-OqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="719" y="-2432"/>
-        </scene>
         <!--Food-->
         <scene sceneID="n4A-m9-o0B">
             <objects>
@@ -2350,30 +2330,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="BbP-A3-AZq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="kXn-MY-ZsH" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="37" y="179" width="270" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
-                                        <color key="value" systemColor="systemGray6Color"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Hib-Jg-luk" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="40" y="291" width="270" height="50"/>
+                                <rect key="frame" x="40" y="335" width="270" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -2394,8 +2352,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="754" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-ys-G4Q" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="40" y="401" width="270" height="50"/>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="754" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-ys-G4Q" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
+                                <rect key="frame" x="40" y="445" width="270" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -2417,7 +2375,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J34-Ah-BRo" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="40" y="518" width="270" height="45"/>
+                                <rect key="frame" x="40" y="562" width="270" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -2439,13 +2397,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="How would you rate our cooking staff?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAm-0p-dhN">
-                                <rect key="frame" x="13" y="358" width="348" height="26.5"/>
+                                <rect key="frame" x="13" y="402" width="348" height="26.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="22"/>
                                 <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMF-kQ-Jmi">
-                                <rect key="frame" x="24" y="237" width="322" height="59"/>
+                                <rect key="frame" x="24" y="281" width="322" height="59"/>
                                 <string key="text">How would you rate our 
 menu selection?</string>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="22"/>
@@ -2453,7 +2411,7 @@ menu selection?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Were you meals delivered on time often?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSW-kK-vOr">
-                                <rect key="frame" x="28" y="123" width="318" height="52.5"/>
+                                <rect key="frame" x="28" y="137" width="318" height="52.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="22"/>
                                 <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2465,13 +2423,13 @@ menu selection?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" text="Rate your experience." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gni-TA-Wdd">
-                                <rect key="frame" x="72" y="466" width="231" height="32"/>
+                                <rect key="frame" x="72" y="510" width="231" height="32"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="26"/>
                                 <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyO-Uu-F3M" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
-                                <rect key="frame" x="40" y="65" width="270" height="50"/>
+                                <rect key="frame" x="40" y="65" width="270" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -2493,16 +2451,39 @@ menu selection?</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oz-DB-FCi">
-                                <rect key="frame" x="234" y="566" width="127" height="52"/>
+                                <rect key="frame" x="234" y="610" width="127" height="57"/>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="Sve-d5-bQw" eventType="touchUpInside" id="cfi-fJ-cXI"/>
+                                    <segue destination="7CM-XJ-dIS" kind="presentation" modalPresentationStyle="fullScreen" id="CIa-mn-7cz"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="kXn-MY-ZsH" customClass="CosmosView" customModule="ResortFeedback" customModuleProvider="target">
+                                <rect key="frame" x="33" y="197" width="270" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" systemColor="systemGray6Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fID-Rh-79L"/>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2516,7 +2497,7 @@ menu selection?</string>
                             </constraint>
                             <constraint firstItem="fID-Rh-79L" firstAttribute="trailing" secondItem="KAm-0p-dhN" secondAttribute="trailing" constant="14" id="7hG-KZ-u1D"/>
                             <constraint firstItem="kXn-MY-ZsH" firstAttribute="top" secondItem="KSW-kK-vOr" secondAttribute="bottom" constant="56" id="9EP-qJ-Sse">
-                                <variation key="heightClass=regular-widthClass=compact" constant="3.5"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="7.5"/>
                             </constraint>
                             <constraint firstItem="nyO-Uu-F3M" firstAttribute="top" secondItem="77N-oh-vkw" secondAttribute="bottom" constant="2.5" id="9pO-b2-pWm">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-5.5"/>
@@ -2557,12 +2538,12 @@ menu selection?</string>
                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="gni-TA-Wdd" firstAttribute="leading" secondItem="fID-Rh-79L" secondAttribute="leading" constant="72" id="eB1-Hr-YY2"/>
-                            <constraint firstItem="kXn-MY-ZsH" firstAttribute="leading" secondItem="fID-Rh-79L" secondAttribute="leading" constant="37" id="ejY-6f-MBN"/>
+                            <constraint firstItem="kXn-MY-ZsH" firstAttribute="leading" secondItem="fID-Rh-79L" secondAttribute="leading" constant="33" id="ejY-6f-MBN"/>
                             <constraint firstItem="Hib-Jg-luk" firstAttribute="top" secondItem="kXn-MY-ZsH" secondAttribute="bottom" constant="9" id="f5e-eb-Ksq">
-                                <variation key="heightClass=regular-widthClass=compact" constant="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="88"/>
                             </constraint>
                             <constraint firstItem="KAm-0p-dhN" firstAttribute="top" secondItem="Hib-Jg-luk" secondAttribute="bottom" constant="17" id="fO7-Hg-ZfB"/>
-                            <constraint firstItem="fID-Rh-79L" firstAttribute="trailing" secondItem="kXn-MY-ZsH" secondAttribute="trailing" constant="68" id="h3u-hS-eH2"/>
+                            <constraint firstItem="fID-Rh-79L" firstAttribute="trailing" secondItem="kXn-MY-ZsH" secondAttribute="trailing" constant="72" id="h3u-hS-eH2"/>
                             <constraint firstItem="fID-Rh-79L" firstAttribute="trailing" secondItem="nyO-Uu-F3M" secondAttribute="trailing" constant="65" id="hfs-w3-Ran"/>
                             <constraint firstItem="i5v-ys-G4Q" firstAttribute="top" secondItem="KAm-0p-dhN" secondAttribute="bottom" constant="16.5" id="jGz-ma-bwZ"/>
                             <constraint firstItem="fID-Rh-79L" firstAttribute="bottom" secondItem="8Oz-DB-FCi" secondAttribute="bottom" constant="13" id="jer-4j-AX6">
@@ -2574,7 +2555,7 @@ menu selection?</string>
                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="kXn-MY-ZsH" firstAttribute="top" secondItem="KSW-kK-vOr" secondAttribute="bottom" constant="56" id="sac-10-6Mk">
-                                <variation key="heightClass=regular-widthClass=compact" constant="3.5"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="7.5"/>
                             </constraint>
                             <constraint firstItem="kMF-kQ-Jmi" firstAttribute="trailing" secondItem="KSW-kK-vOr" secondAttribute="trailing" id="sh5-Ar-HUk"/>
                             <constraint firstItem="fID-Rh-79L" firstAttribute="trailing" secondItem="8Oz-DB-FCi" secondAttribute="trailing" constant="145" id="uDb-DY-BC0">
@@ -2583,7 +2564,7 @@ menu selection?</string>
                             <constraint firstItem="77N-oh-vkw" firstAttribute="leading" secondItem="fID-Rh-79L" secondAttribute="leading" constant="28" id="w34-8E-y96">
                                 <variation key="heightClass=regular-widthClass=compact" constant="26"/>
                             </constraint>
-                            <constraint firstItem="kMF-kQ-Jmi" firstAttribute="top" secondItem="kXn-MY-ZsH" secondAttribute="bottom" constant="8" symbolic="YES" id="zER-O0-pwe"/>
+                            <constraint firstItem="kMF-kQ-Jmi" firstAttribute="top" secondItem="kXn-MY-ZsH" secondAttribute="bottom" constant="34" id="zER-O0-pwe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -2703,7 +2684,7 @@ menu selection?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bO-W0-0dZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3834.4000000000001" y="-2432.8335832083958"/>
+            <point key="canvasLocation" x="3230" y="-2433"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Sgi-ba-Gop">
@@ -2826,7 +2807,7 @@ menu selection?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rr7-uF-LNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570.4000000000001" y="-359.37031484257875"/>
+            <point key="canvasLocation" x="1969" y="-378"/>
         </scene>
         <!--Spa-->
         <scene sceneID="iAu-PP-7Zf">
@@ -2911,7 +2892,7 @@ to enough fresh towels?</string>
                                         <color key="value" systemColor="systemGray6Color"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
-                                        <color key="value" red="0.89882361889999995" green="0.97683888669999996" blue="0.69045907259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2988,14 +2969,15 @@ to enough fresh towels?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRk-9B-ycY">
-                                <rect key="frame" x="250" y="564" width="107" height="48"/>
+                                <rect key="frame" x="250" y="586" width="107" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calcAvg:" destination="7CM-XJ-dIS" eventType="touchUpInside" id="KCY-Q9-oJC"/>
+                                    <segue destination="ML2-Ao-7zu" kind="presentation" modalPresentationStyle="fullScreen" id="Rhb-N2-ieI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3029,7 +3011,7 @@ to enough fresh towels?</string>
                             <constraint firstItem="fie-PU-M99" firstAttribute="top" secondItem="VTk-e6-hEq" secondAttribute="bottom" constant="14" id="Ve1-qZ-RED"/>
                             <constraint firstItem="TxL-SA-XPe" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Nz-9U-dGa" secondAttribute="trailing" id="WsE-sm-ER3"/>
                             <constraint firstItem="fRk-9B-ycY" firstAttribute="top" secondItem="pck-N7-jIg" secondAttribute="bottom" constant="1" id="YHO-Zn-AWz">
-                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="e1g-zt-3wz" firstAttribute="trailing" secondItem="6cR-Wa-DkM" secondAttribute="trailing" constant="462" id="alB-cd-SRC">
                                 <variation key="heightClass=regular-widthClass=compact" constant="427.5"/>
@@ -3078,7 +3060,7 @@ to enough fresh towels?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Phc-wL-1kN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4901.6000000000004" y="-2432.8335832083958"/>
+            <point key="canvasLocation" x="4543" y="-2434"/>
         </scene>
         <!--Thank You Screen View Controller-->
         <scene sceneID="OEB-v1-aTK">
@@ -3377,7 +3359,7 @@ the survey. Please try again.</string>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="D0I-Hf-6Jn"/>
-        <segue reference="OCO-hv-Q1D"/>
+        <segue reference="OeJ-Uv-tNl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="End" width="375" height="667"/>
@@ -3393,16 +3375,10 @@ the survey. Please try again.</string>
         <image name="figure.walk" catalog="system" width="95" height="128"/>
         <image name="gift" catalog="system" width="128" height="124"/>
         <image name="house" catalog="system" width="128" height="106"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
